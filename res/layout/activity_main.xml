@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eebbk.camerademo.MainActivity" >
+
+    <SurfaceView
+        android:id="@+id/sv_show_picture" 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_little_picture"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher"/>
+        <Button
+            android:id="@+id/btn_take_picture" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="拍照"/>
+    </RelativeLayout>
+
+</LinearLayout>
